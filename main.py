@@ -36,18 +36,15 @@ def main():
         for obj in updatable:
             obj.update(dt)
 
-        for asteroid in asteroids.copy():
+        for asteroid in asteroids:
             if asteroid.collides_with(player):
                 print("Game over!")
-                pygame.quit()
                 sys.exit()
 
-            for shot in shots.copy():
+            for shot in shots:
                 if asteroid.collides_with(shot):
                     shot.kill()
-                    new_asteroids = asteroid.split()  # Get the new asteroids from the split
-                    asteroid.kill()  # Remove the asteroid that was hit
-                    asteroids.add(*new_asteroids)  # Add any new asteroids created
+                    asteroid.split()
 
         screen.fill("black")
 
@@ -56,6 +53,7 @@ def main():
 
         pygame.display.flip()
 
+        # limit the framerate to 60 FPS
         dt = clock.tick(60) / 1000
 
 
