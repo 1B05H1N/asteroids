@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc  # Ignore Python compiled files
+*.pyo  # Ignore Python optimized files
+*.pyd  # Ignore Python dynamic files
+*.pyw  # Ignore Python Windows files
+*.pyz  # Ignore Python zipped files
+*.pywz  # Ignore Python Windows zipped files
