@@ -1,3 +1,6 @@
+Here’s a `README.md` template for your asteroids game repository:
+
+```markdown
 # Asteroids Game
 
 An Asteroids-style arcade game built with Python and Pygame. Control your spaceship, shoot down asteroids, and try to survive as long as possible!
@@ -8,8 +11,6 @@ An Asteroids-style arcade game built with Python and Pygame. Control your spaces
 - [Installation](#installation)
 - [Running the Game](#running-the-game)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -28,5 +29,35 @@ An Asteroids-style arcade game built with Python and Pygame. Control your spaces
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/asteroids-game.git
+   git clone https://github.com/1B05H1N/asteroids.git
    cd asteroids-game
+   ```
+
+2. **Install Dependencies**:
+   Make sure you have [Python](https://www.python.org/downloads/) installed. Then install Pygame:
+   ```bash
+   pip install pygame
+   ```
+
+## Running the Game
+
+Run the game by executing the following command in the terminal:
+
+```bash
+python main.py
+```
+
+## Project Structure
+
+```plaintext
+.
+├── main.py              # Main game loop
+├── player.py            # Player class for spaceship control
+├── asteroid.py          # Asteroid class for individual asteroids
+├── asteroidfield.py     # Manages asteroid spawning
+├── shot.py              # Shot class for player bullets
+├── constants.py         # Game constants (screen size, speed, etc.)
+├── circleshape.py       # Base class for circular game objects
+├── .gitignore           # Ignore __pycache__ and other unnecessary files
+└── README.md            # Project documentation
+```
