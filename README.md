@@ -1,6 +1,3 @@
-Here’s a `README.md` template for your asteroids game repository:
-
-```markdown
 # Asteroids Game
 
 An Asteroids-style arcade game built with Python and Pygame. Control your spaceship, shoot down asteroids, and try to survive as long as possible!
